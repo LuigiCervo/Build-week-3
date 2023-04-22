@@ -1,0 +1,88 @@
+@import "./partials/mixin";
+@import "./partials/variables";
+@import "./partials/footer";
+@import "./partials/navbar";
+@import "./partials/PNF";
+@import "./partials/messages";
+@import "./partials/profileHero";
+@import "./partials/home";
+@import "./partials/post";
+
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: #f3f2ef;
+}
+
+.pageContainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 3.7rem;
+}
+
+.pageContainer > .row {
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+}
+
+.sectionContainer {
+  @include mySection;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border-color: rgb(198, 198, 199);
+}
+
+.footerContainer {
+  font-size: 14px;
+  padding: 1rem;
+  padding: 10px 20px;
+}
+
+.linkWrap {
+  @include myLink;
+}
+
+.linkBehave {
+  text-decoration: none;
+  color: $myGrey;
+  padding: 0;
+}
+
+.linkBehave:hover {
+  text-decoration: underline;
+  color: $myDark;
+  cursor: pointer;
+}
+
+.btnWhite {
+  @include myBtn;
+  background-color: white;
+  border-color: $myBlue;
+  color: $myBlue;
+}
+
+.btnBlue {
+  @include myBtn;
+  background-color: $myBlue;
+  border-color: $myBlue;
+  color: white;
+}
+
+.btnGrey {
+  @include myBtn;
+  background-color: white;
+  border-color: $myGrey;
+  color: $myGrey;
+}
+
+.textCutter {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

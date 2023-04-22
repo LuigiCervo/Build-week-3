@@ -1,0 +1,43 @@
+@mixin myLink {
+  a,
+  a:not([href]):not([class]),
+  button {
+    text-decoration: none;
+    color: $myDark;
+    padding: 0;
+  }
+  a:hover,
+  a:not([href]):not([class]):hover,
+  button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@mixin myBtn {
+  border: 2px solid;
+  border-radius: 2em;
+  padding: 3px 10px;
+  margin: 5px;
+  font-weight: 600;
+}
+
+@mixin mySection {
+  width: 100%;
+  border: 1px solid $myDark;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 15px;
+}
+
+@mixin centeringFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fullDimensions {
+  height: 100%;
+  width: 100%;
+}
